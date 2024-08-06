@@ -1,4 +1,5 @@
 import React from 'react'
+import FileUploader from '@/FileUploader'
 import VideoPlayer from '@/VideoPlayer'
 
 const App: React.FC = () => {
@@ -7,8 +8,9 @@ const App: React.FC = () => {
             <h1 className="text-center text-[2rem] text-blue-700">
                 ID Verification
             </h1>
-            <div className="flex justify-center">
-                <VideoPlayer />
+            <div className="mt-10 flex flex-col items-center justify-center">
+                <FileUploader />
+                {/* <VideoPlayer /> */}
             </div>
         </>
     )
